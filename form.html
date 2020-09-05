@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<style>
+		input{
+			width:30%;
+		}
+		body{
+			text-align: center;
+			background-color: coral;
+		}
+		input[type=text]{
+			padding: 15px 20px;
+			box-sizing: border-box;
+			margin:8px 0; 
+
+		}
+		input[type=cell]{
+			padding: 15px 20px;
+			box-sizing: border-box;
+		}
+
+
+		input[type=submit]{
+			background-color: green;
+			color: white;
+			padding: 10px 10px;
+			border:none;
+			border-radius:  5px;
+			cursor:pointer;
+			float:center;
+			box-sizing: border-box;
+			width:10%;
+		}
+		label{
+			width :200px;
+			padding:12px 12px 12px 0;
+			display:inline-block; 
+		}
+		input[type=submit]:hover{
+			background-color: DarkBlue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Application  Form</h1>
+<form actiom="#" onsubmit="return validation()">
+	<div class="form-group">
+		<label> <h2><b>Name</b>:</h2></label>
+		<input type="text" name=" Gaurav" class="form-control" id="name">
+		<span id="Name"> </span>
+	</div>
+	<div class="form-group">
+		<label> <h2><b>Phone Number:</b></h2></label>
+		<input type="cell" name=" phone" class="form-control" id="phone">
+		<span id="Phone No."> </span>
+	</div>
+	<div class="form-group">
+		<label> <h2><b>E-mail</b>:</h2></label>
+		<input type="text" name="email" class="form-control" id="email">
+		<span id="E-mail"> </span>
+	</div>
+	<input type ="submit" name="submit" value="submit">
+</form>
+
+<script src="main.js"></script>
+
+</body>
+</html>
